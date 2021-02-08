@@ -37,7 +37,7 @@ Prerequisites
 	Centos:
 	```
 	sudo yum -y install irods-devel
-	sudo yum install irods-externals-clang3.8-0.x86_64
+	sudo yum install irods-externals*
 	```
 
 - Globus and other packages:
@@ -81,7 +81,7 @@ Building iRODS DSI with CMake
  
 3. Set some environment variables that are used by the build process and the PATH so that the correct version of cmake will be found.
 	```
-	export PATH=/opt/irods-externals/cmake3.5.2-0/bin:$PATH
+	export PATH=/opt/irods-externals/cmake3.11.4-0/bin:$PATH
 	export GLOBUS_LOCATION="/usr"
 	export IRODS_PATH="/usr"
 	export DEST_LIB_DIR="/<preferred_path>/iRODS_DSI"
